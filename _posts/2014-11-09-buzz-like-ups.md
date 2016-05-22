@@ -6,6 +6,8 @@ categories: IoT
 permalink: /:slug
 comments: true
 ---
+I started out with hardward lately, and I often play with silly little electric circuits that I build. This time around, I picked Buzzer.
+
 This is yet another simple test of a new hardware component that I haven't played with before. Buzzer is an audio device which may be mechanical, electromechanical, or piezoelectric. It can generate from quite awful UPS-like siren to melodious tone; it really depends on how you want to use it. I just wanted to make noise like that of a UPS does when electricity goes off.
 
 I'm using a Buzzer module which has three legs, also a 9V battery, so that it may operate without getting power from the USB and can become a portable device. Here's the connection list that I have made with an Arduino Nano for this:
