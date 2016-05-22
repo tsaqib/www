@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta property="og:description" content="I'm a Microsoft Alumni and an international award-winning 11-year experienced polyglot technologist. I bring expertise on both proprietary and open source stack with the speciality of designing and deploying secure, complex and scalable solutions." />
+  <meta property="og:image" content="http://tanzimsaqib.com/images/TanzimSaqib.jpg" />
+  <meta property="og:title" content="Tanzim Saqib" />
+  <meta property="og:url" content="http://tanzimsaqib.com/" />
+  <meta property="og:type" content="website" /> 
+  <meta property="fb:admins" content="100003605676027" />
+  <meta property="fb:app_id" content="279346112134764" /> 
+  <meta name="google-site-verification" content="fM7tpfYkDhGGKPJ6d6p-koxs1-22Id9RAmDjbjufJ8Y" />
+  <meta name="msvalidate.01" content="0461B36102590574AB2867A425D80882" />
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
