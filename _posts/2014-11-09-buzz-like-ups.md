@@ -4,6 +4,7 @@ title:  "Buzz like a UPS"
 date:   2014-11-09 16:34:56 +0600
 categories: IoT
 permalink: /:slug
+comments: true
 ---
 This is yet another simple test of a new hardware component that I haven't played with before. Buzzer is an audio device which may be mechanical, electromechanical, or piezoelectric. It can generate from quite awful UPS-like siren to melodious tone; it really depends on how you want to use it. I just wanted to make noise like that of a UPS does when electricity goes off.
 
