@@ -6,7 +6,7 @@ categories: IoT
 permalink: /:slug
 comments: true
 ---
-I started out with hardward lately, and I often play with silly little electric circuits that I build. This time around, I picked Buzzer.
+Some of the hardward posts that I made earlier to another blog I really like, as I started out with simple [LED blinking](https://tanzimsaqib.wordpress.com/2014/11/05/hello-blinking-led/) and [blinking a BiPolar LED](https://tanzimsaqib.wordpress.com/2014/11/08/blinking-bipolar-led/), to even more meaningful [moving a car forward and backward](https://tanzimsaqib.wordpress.com/2014/11/14/moving-a-car-forwardbackward/). I often play with silly little electric circuits that I build. This time around, I picked a Buzzer.
 
 This is yet another simple test of a new hardware component that I haven't played with before. Buzzer is an audio device which may be mechanical, electromechanical, or piezoelectric. It can generate from quite awful UPS-like siren to melodious tone; it really depends on how you want to use it. I just wanted to make noise like that of a UPS does when electricity goes off.
 
