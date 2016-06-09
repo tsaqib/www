@@ -45,4 +45,4 @@ sudo npm install -g less less-plugin-clean-css
 python odoo.py -r odoouser -w odoouser --db_host localhost
 {% endhighlight %}
 
-That's it. Odoo 9.0 should be running at http://127.0.0.1:4000 now.
+That's it. Odoo 9.0 should be running at http://127.0.0.1:8069 now.
