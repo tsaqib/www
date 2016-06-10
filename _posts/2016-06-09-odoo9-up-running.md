@@ -17,7 +17,7 @@ Here's the list of binaries that you may need to download and install:
 - [Node.js](https://nodejs.org/en/download/)
 - [Odoo 9 source-code](https://github.com/odoo/odoo/archive/9.0.zip) to be unzipped assuming into odoo9 directory
 - [PIP installer](https://bootstrap.pypa.io/get-pip.py) (not a binary, rather a script)
-- Install [PostgreSQL](https://www.postgresql.org/download/) at a custom location
+- Install [PostgreSQL](https://www.postgresql.org/download/) 
 - Optionally, [pgAdmin](https://www.pgadmin.org/download/)
 
 ### Installation Sequence
@@ -32,7 +32,7 @@ CREATE USER odoouser WITH SUPERUSER CREATEDB CREATEROLE PASSWORD 'odoouser';
 
 Now that the database is setup, let us create a Python environment for Odoo, and install its dependencies.
 {% highlight bash %}
-export PATH=$PATH:/installation-path/postgresql/bin
+export PATH=$PATH:/installation-path/postgresql/bin # example: /Library/PostgreSQL/9.5/bin
 sudo python get-pip.py 
 pip install -U pip setup tools virtualenv
 brew install --upgrade openssl
