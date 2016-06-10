@@ -46,3 +46,5 @@ python odoo.py -r odoouser -w odoouser --db_host localhost
 {% endhighlight %}
 
 That's it. Odoo 9.0 should be running at http://127.0.0.1:8069 now.
+
+Note: Always make sure that you `source bin/activate` before running Odoo, otherwise, it will try to run outside of the environment that we have created for it.
