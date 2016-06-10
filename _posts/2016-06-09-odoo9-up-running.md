@@ -32,7 +32,7 @@ CREATE USER odoouser WITH SUPERUSER CREATEDB CREATEROLE PASSWORD 'odoouser';
 
 Now that the database is setup, let us create a Python environment for Odoo, and install its dependencies.
 {% highlight bash %}
-export PATH=$PATH:/installation-path/postgresql/bin # example: /Library/PostgreSQL/9.5/bin
+export PATH=$PATH:/Library/PostgreSQL/9.5/bin # example
 sudo python get-pip.py 
 pip install -U pip setup tools virtualenv
 brew install --upgrade openssl
