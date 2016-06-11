@@ -18,7 +18,6 @@ Here's the list of binaries that you may need to download and install:
 - [Odoo 9 source-code](https://github.com/odoo/odoo/archive/9.0.zip) to be unzipped assuming into odoo9 directory
 - [PIP installer](https://bootstrap.pypa.io/get-pip.py) (not a binary, rather a script)
 - Install [PostgreSQL](https://www.postgresql.org/download/) 
-- Optionally, [pgAdmin](https://www.pgadmin.org/download/)
 
 ### Installation Sequence
 Now you may close the browser and focus on the Terminal:
