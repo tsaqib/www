@@ -44,4 +44,30 @@ python
 '3.1.0'
 {% endhighlight %}
 
+Alright, now it seems all OK, until its not. If you choose to use Matplotlib which uses UI toolkits which eventually use framework version of the Python of OS X, may cause trouble. Why would you need Matplotlib? Because without it, it wouldn't be easy for you to output the image processing changes that you are going to make. The best way in my opinion is to run it in a virtual environment, and that's not going to solve the problem straight way either. Matplotlib's [FAQ](http://matplotlib.org/faq/virtualenv_faq.html) helps to figure it out.  
+
+Create `frameworkpython` inside bin directory of the virtual environment with the following content:
+
+{% highlight bash %}
+#!/bin/bash
+# what real Python executable to use
+PYVER=2.7
+PATHTOPYTHON=/usr/bin/ # `which python` and find out
+PYTHON=${PATHTOPYTHON}python${PYVER}
+
+ENV=`$PYTHON -c "import os; print os.path.abspath(os.path.join(os.path.dirname(\"$0\"), '..'))"`
+
+# now run Python with the virtualenv set as Python's HOME
+export PYTHONHOME=$ENV
+exec $PYTHON "$@"
+{% endhighlight %}
+
+In the end, forget not to change its permission `chmod +x bin/frameworkpython`.
+
+Now go ahead and execute your program 
+{% highlight bash %}
+source bin/activate
+frameworkpython myprogram.py
+{% endhighlight %}
+
 Hope this will help me in the future should I reinstall OS X.
