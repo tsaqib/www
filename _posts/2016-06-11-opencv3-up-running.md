@@ -6,7 +6,7 @@ categories: OpenCV
 permalink: /:slug
 comments: true
 ---
-Getting [OpenCV 3X](http://opencv.org) is a huge pain on OS X. I have crawled through internet and struggled a lot to make it work on my Mac. Some of the painfully long, yet didn't work for me ways [1](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/) and [2](http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/). Here’s my shortcut. 
+Running [OpenCV 3X](http://opencv.org) is a huge pain on OS X. I have crawled through the internet and struggled a lot to make it work on my Mac. Some of the painfully long, yet didn't work for me ways [1](http://www.learnopencv.com/install-opencv-3-on-yosemite-osx-10-10-x/) and [2](http://www.pyimagesearch.com/2015/06/15/install-opencv-3-0-and-python-2-7-on-osx/). Here’s my shortcut. 
 
 First off, make sure you have brew and Xcode essentials installed: 
 
@@ -44,7 +44,7 @@ python
 '3.1.0'
 {% endhighlight %}
 
-Alright, now it seems all OK, until its not. If you choose to use Matplotlib which uses UI toolkits which eventually use framework version of the Python of OS X, may cause trouble. Why would you need Matplotlib? Because without it, it wouldn't be easy for you to output the image processing changes that you are going to make. The best way in my opinion is to run it in a virtual environment, and that's not going to solve the problem straight way either. Matplotlib's [FAQ](http://matplotlib.org/faq/virtualenv_faq.html) helps to figure it out.  
+Alright, now it seems all OK, until it is not. If you choose to use Matplotlib which uses UI toolkits which eventually use framework version of the Python of OS X, may cause trouble. Why would you need Matplotlib? Because without it, it wouldn't be easy for you to output the image processing changes that you are going to make. The best way, in my opinion, is to run it in a virtual environment, and that's not going to solve the problem straight way either. Matplotlib's [FAQ](http://matplotlib.org/faq/virtualenv_faq.html) helps to figure it out.  
 
 Create `frameworkpython` inside bin directory of the virtual environment with the following content:
 

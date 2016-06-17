@@ -6,10 +6,10 @@ categories: Odoo
 permalink: /:slug
 comments: true
 ---
-I have recently setup Odoo 9.0 in fair amount of places, including inside Linux and Windows boxes and VMs on the Cloud, Docker, as well as on my local OSX computer. There were 1-2 tricks that I would like to keep documented lest I should forget in the future. 
+I have recently setup Odoo 9.0 in a fair amount of places, including inside Linux and Windows boxes and VMs on the Cloud, Docker, as well as on my local OSX computer. There were 1-2 tricks that I would like to keep documented lest I should forget in the future. 
 
 ### Odoo Ingredient List
-Odoo was written in Python and it's based on PostgreSQL. Its UI is transformed using 'less' processor which can be installed using Node's NPM. So, first things first, make sure Python 2.7.9+ and Node.js are installed, but beware of the Python 3.X versions.
+Odoo was written in Python and it's based on PostgreSQL. Its UI is transformed using 'less' processor which can be installed using Node's NPM. So, first things first, make sure Python 2.7.9+ and Node.js are installed but beware of the Python 3.X versions.
 
 Here's the list of binaries that you may need to download and install:
 
