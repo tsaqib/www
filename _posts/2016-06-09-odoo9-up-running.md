@@ -44,6 +44,6 @@ sudo npm install -g less less-plugin-clean-css
 python odoo.py -r odoouser -w odoouser --db_host localhost
 {% endhighlight %}
 
-That's it. Odoo 9.0 should be running at http://127.0.0.1:8069 now.
+That's it. Odoo 9.0 should be running at http://127.0.0.1:8069 now. However, always make sure that you `source bin/activate` before running Odoo, otherwise, it will try to run outside of the environment that we have created for it.
 
-Note: Always make sure that you `source bin/activate` before running Odoo, otherwise, it will try to run outside of the environment that we have created for it.
+Note: If you find this a hassle, the entire process was simply replaced by an `odoo9` command if you use [docker-scripts](https://github.com/tsaqib/docker-scripts). 
