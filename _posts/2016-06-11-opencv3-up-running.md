@@ -46,7 +46,7 @@ python
 
 Alright, now it seems all OK, until it is not. If you choose to use Matplotlib which uses UI toolkits which eventually use framework version of the Python of OS X, may cause trouble. Why would you need Matplotlib? Because without it, it wouldn't be easy for you to output the image processing changes that you are going to make. The best way, in my opinion, is to run it in a virtual environment, and that's not going to solve the problem straight way either. Matplotlib's [FAQ](http://matplotlib.org/faq/virtualenv_faq.html) helps to figure it out.  
 
-Create `frameworkpython` inside bin directory of the virtual environment with the following content:
+Create `fxpy` inside bin directory of the virtual environment with the following content:
 
 {% highlight bash %}
 #!/bin/bash
@@ -62,12 +62,20 @@ export PYTHONHOME=$ENV
 exec $PYTHON "$@"
 {% endhighlight %}
 
-In the end, forget not to change its permission `chmod +x bin/frameworkpython`.
+In the end, forget not to change its permission `chmod +x bin/fxpy`. Wait, why do we need this? Because if we don't, we will end up with the following error message which is quite self-explanatory:
 
-Now go ahead and execute your program 
+    RuntimeError: Python is not installed as a framework. The Mac OS X backend 
+    will not be able to function correctly if Python is not installed as a 
+    framework. See the Python documentation for more information on installing 
+    Python as a framework on Mac OS X. Please either reinstall Python as a 
+    framework, or try one of the other backends. If you are Working with 
+    Matplotlib in a virtual enviroment see 'Working with Matplotlib in Virtual 
+    environments' in the Matplotlib FAQ.
+
+Needless to say, we have skipped that message. Lets go ahead and execute the program 
 {% highlight bash %}
 source bin/activate
-frameworkpython myprogram.py
+fxpy main.py
 {% endhighlight %}
 
 Hope this will help me in the future should I reinstall OS X.

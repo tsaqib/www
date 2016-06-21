@@ -30,7 +30,17 @@ export PYTHONHOME=$ENV
 exec $PYTHON "$@"
 {% endhighlight %}
 
-In the end, forget not to change its permission and activate the Virtual Environment.
+ Wait, why do we need this? Because if we don't, we will end up with the following error message which is quite self-explanatory:
+
+    RuntimeError: Python is not installed as a framework. The Mac OS X backend 
+    will not be able to function correctly if Python is not installed as a 
+    framework. See the Python documentation for more information on installing 
+    Python as a framework on Mac OS X. Please either reinstall Python as a 
+    framework, or try one of the other backends. If you are Working with 
+    Matplotlib in a virtual enviroment see 'Working with Matplotlib in Virtual 
+    environments' in the Matplotlib FAQ.
+
+Needless to say, we have skipped that message. In the end, forget not to change its permission and activate the Virtual Environment.
 
 {% highlight bash %}
 chmod +x bin/fxpy
