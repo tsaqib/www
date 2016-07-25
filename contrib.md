@@ -7,6 +7,7 @@ I care for the community.
 
 __Recent Work:__ 
 
+- [Docker Scripts: OS X-optimized Docker shortcuts](https://github.com/tsaqib/docker-scripts)
 - [IEEE Conference speaking on Tech Leadership](https://www.youtube.com/watch?v=Dttbdo4agr4)
 - [formdata (2015): Node.js open source project for demo](https://github.com/tsaqib/formdata)
 - [Hackathons, competitions, research ideas (2015)](https://gist.github.com/tsaqib/9a8ded18603881b76a8f)
