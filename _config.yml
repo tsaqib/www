@@ -22,3 +22,12 @@ markdown: kramdown
 
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+twitter:
+  username: tanzimsaqib
+facebook:
+  app_id: 279346112134764
+
+sass:
+  style: :compressed

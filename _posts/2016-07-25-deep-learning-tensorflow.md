@@ -5,6 +5,7 @@ date:   2016-07-25 19:40:19 +0600
 categories: Deep Learning
 permalink: /:slug
 comments: true
+thumbnail: /assets/deep-learning-momentum.png
 ---
 This is a walkthrough to writing a Deep Learning implementation using TensorFlow. I'm no expert in Machine Learning, therefore, I expect that you learn the theory by yourself before trying to understand the code here. However, there is no harm in tinkering with it. 
 
