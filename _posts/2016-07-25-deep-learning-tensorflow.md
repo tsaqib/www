@@ -186,9 +186,11 @@ def _shuffle_split(self):
                             self._raw_data.columns[self._datadim - 1]]]
     self._test_label = [int(row) for row in self._testdata[
                             self._raw_data.columns[self._datadim - 1]]]
+    self._traindata = self._traindata.ix[:, range(self._datadim - 1)]
+    self._testdata = self._testdata.ix[:, range(self._datadim - 1)]
 {% endhighlight %}
 
-The classifier can only work with int32 / int64, therefore, it was required to convert both the training and test labels.
+The classifier can only work with int32 / int64, therefore, it was required to convert both the training and test labels. In the end, it was also made sure that the labels themselves aren't being fed into the classifier, so they are filtered out in the last two lines.
 
 #### Training the Model and Measuring Performance
 Now that we are done with all the preparations for the training, let us go ahead and design the network. The hidden layers can be arranged in any way that seems suitable or yields better results, but from our observation the following design suits us best. There are also literatures which propose or establish many best practices, but I am not going into that discussion, simply because I do not know enough.
