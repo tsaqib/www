@@ -45,7 +45,7 @@ Create a bash file called `gunicorn_start.sh` with the following contents:
 #!/bin/bash
 cd /home/user/my_project
 source bin/activate
-exec gunicorn my_project.wsgi:application --name my_project 
+exec gunicorn my_project.wsgi:application --name my_project \
         --workers 4 -b 0.0.0.0:8080
 {% endhighlight %}
 
