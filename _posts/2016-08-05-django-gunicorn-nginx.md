@@ -16,11 +16,10 @@ Assuming that you are configuring a fresh Ubuntu VM. You need to install nginx, 
 
 {% highlight bash %}
 sudo apt-get update
-sudo apt-get install nginx python-pip python-dev build-essential libpq-dev
+sudo apt-get install nginx python-pip python-dev build-essential libpq-dev git
 sudo pip install --upgrade pip 
 sudo pip install --upgrade virtualenv 
-sudo apt-get install git
-clone https://github.com/user/my_project.git
+git clone https://github.com/user/my_project.git
 cd my_project
 virtualenv .
 source bin/activate
@@ -100,6 +99,7 @@ server {
 Create a link to this file into `sites-enabled` as well.
 
 {% highlight bash %}
+# Relative paths _may_ not work. I repeat.
 sudo ln -s /etc/nginx/sites-available/my-project \
         /etc/nginx/sites-enabled/my-project
 
