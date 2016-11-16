@@ -37,7 +37,7 @@ Feature: Test pricing
 You can install behave into your codebase by executing the following:
 
 ```bash
-pip install git+https://github.com/behave/behave
+pip install behave
 ```
 
 To run the tests, simply execute `behave`.
