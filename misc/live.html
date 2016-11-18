@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script>
+            function golive()
+            {
+                FB.ui({display:'popup', method:'live_broadcast', phase:'create',}, function(response) {
+                    if(!response.id) {
+                        alert('Facebook Live Cancelled');
+                        return;
+                    }
+                    
+                    //FB.ui({display:'popup', method:'live_broadcast', phase:'publish', broadcast_data:response, }, function(response){});
+                });
+            }
+        </script>
+    </head>
+<body>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId      : '103289206781675',
+            xfbml      : true,
+            version    : 'v2.8'
+            });
+            FB.AppEvents.logPageView();
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <button onclick="golive()">go live</button>
+</body>
+
+</html>
