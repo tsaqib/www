@@ -1,0 +1,20 @@
+<script>
+    qurl = location.search.substring(1);
+    if(self != top) {
+        top.location = self.location;
+    }
+
+    var xhr = new XMLHttpRequest();
+    document.addEventListener('DOMContentLoaded', function() {
+        xhr.open('GET', qurl, true);
+        xhr.send();
+        xhr.onreadystatechange = function(e) {
+            if (xhr.readyState == 4) {
+                document.open();
+                document.write(xhr.responseText);
+                document.close();
+            }
+        };
+    }, false);
+
+</script>
