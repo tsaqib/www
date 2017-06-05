@@ -9,5 +9,5 @@ thumbnail: /assets/nn-numpy-ts.png
 ---
 Ever wondered how does a Neural Network work with time series data? Also, ever imagined how it could be like writing a NN using only Numpy? This notebook is for you.
 
-<iframe style="display: none;" src="redir.html?https://raw.githubusercontent.com/tsaqib/ml-playground/master/bike-sharing.html"></iframe>
+<iframe style="display: none;" src="redir.html?https://raw.githubusercontent.com/tsaqib/ml-playground/master/bike-sharing/bike-sharing.html"></iframe>
 
