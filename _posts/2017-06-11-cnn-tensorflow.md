@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Step-by-Step Convolutional Neural Network Pipeline using TensorFlow"
+title:  "A Step-by-Step Convolutional Neural Network using TensorFlow"
 date:   2017-02-12 23:33:10 +0600
 categories: Neural Network
 permalink: /:slug
