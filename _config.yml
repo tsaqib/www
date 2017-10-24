@@ -9,10 +9,9 @@
 title: Tanzim Saqib
 email: me@tanzimsaqib.com
 description: > 
-  I'm a Microsoft Alumni and an international award-winning 12-year experienced polyglot 
-  technologist. I bring expertise on both proprietary and open source stack with 
-  the speciality of designing and deploying secure, complex and scalable solutions. 
-baseurl: "" # the subpath of your site, e.g. /blog
+  I'm a polyglot technical leader in art, crafts, science and engineering of software 
+  development with the speciality of designing and delivering complex and scalable solutions. 
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://tanzimsaqib.com" # the base hostname & protocol for your site
 twitter_username: tanzimsaqib
 github_username:  tsaqib
