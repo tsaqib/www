@@ -11,7 +11,7 @@ email: me@tanzimsaqib.com
 description: > 
   I'm a polyglot technical leader in art, crafts, science and engineering of software 
   development with the speciality of designing and delivering complex and scalable solutions. 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tanzimsaqib.com" # the base hostname & protocol for your site
 twitter_username: tanzimsaqib
 github_username:  tsaqib
